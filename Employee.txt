@@ -1,0 +1,64 @@
+package p1;
+
+public class Employee {
+
+	public static void main(String[] args) {
+		
+		int allSalary[] = new int[3];
+		allSalary[0] = 15000;
+		allSalary[1] = 175000;
+		allSalary[2] = 85000;
+		
+		for(int x = 0; x < allSalary.length; x++) {
+			System.out.println( "Salary:- "+ allSalary[x]);
+			
+			int monthlySalary = allSalary[x];
+			
+			int ta = 0;
+			int da = 0;
+			int hra = 0;
+			int annualSalary = monthlySalary*12+hra+da+ta;
+			hra = (int)(annualSalary * 0.20);
+			da = (int)(annualSalary+hra * 0.40);
+			int taxableSalary = annualSalary+hra+da;
+			
+			
+			ta = 0;
+			 
+			 if (ta > 500000) {
+					 double tax = annualSalary*0.10;
+					 System.out.println(tax);
+			 }
+			 
+			 
+			 int tax = 0;
+			  if (annualSalary < 500000)
+			  {
+					  System.out.println("Anual Salary: " +annualSalary + "  No Tax");
+			  }
+			  else if (annualSalary > 500000 && annualSalary < 1000000)
+			  {
+					  tax=(int) (annualSalary * 0.10);
+					  System.out.println("Annual Salary: " +annualSalary + "  you have to pay tax = "+ tax);
+
+			  }
+			  else if (annualSalary > 1000000 && annualSalary < 2000000)
+			  {
+					  tax=(int) (annualSalary * 0.20);
+					  System.out.println("Annual Salary: " +annualSalary + "  you have to pay tax:  "+ tax);
+
+			  }else {
+					  tax=(int) (annualSalary * 0.30);
+					  System.out.println("Annual Salary: " +annualSalary + "  you have to pay tax:  "+ tax);
+			  }
+			
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+}
