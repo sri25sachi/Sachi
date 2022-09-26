@@ -1,0 +1,53 @@
+package p1;
+import java.util.Scanner;
+
+
+public class Account {
+
+	private static int x;
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int accountbalance[] = new int[5]; 
+		int i = 0;
+		
+		
+		accountbalance[0] = 8000;
+		accountbalance[1] = 7000;
+		accountbalance[2] = 6000;
+		accountbalance[3] = 9000;
+		accountbalance[4] = 10000;
+		for (i= 0; i < accountbalance.length; i++) {
+			System.out.println(accountbalance[i]);
+		}
+		
+		
+		
+		
+		int indexvalue = 0;
+		int amount = 0;
+		int payee = 0;
+		System.out.println("Enter index value (0-4)");
+		indexvalue = in.nextInt();
+		
+		System.out.println("Enter the amount to be transfered");
+		amount = in.nextInt();
+		
+	    System.out.println("enter the index value of payee");
+	    payee = in.nextInt();
+	     
+	    if(accountbalance[indexvalue]<= 5000) {
+	    	System.out.println("Minimum amount should be 5000 in your Account.  ");
+	    }else {
+	    	accountbalance[indexvalue] = accountbalance[indexvalue] - amount;
+	    	accountbalance[payee] = accountbalance[payee]+amount;
+	    	System.out.println("The blance amount of "+ indexvalue+  " is "  + accountbalance[indexvalue]+" ");
+	    	System.out.println("The blance amount of "+ payee+ " is " + accountbalance[payee]+" ");
+	    }
+	    
+
+
+	}
+
+}
