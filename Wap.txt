@@ -1,0 +1,29 @@
+package p1;
+import java.util.Scanner;
+
+public class wap {
+
+	public static void main(String[] args) {
+		int num;
+			System.out.println("Enter any Num");
+			Scanner in = new Scanner(System.in);
+			
+			num = in.nextInt();
+			
+			System.out.println("Enter the 1st num");
+			int a = in.nextInt();
+			
+			System.out.println("Enter the last Num");
+			
+			int b = in.nextInt();
+			
+			for(int i = a ; i<=b ; i++) {
+				System.out.println(num+"*"+ i +"="+ num*i);
+				
+			}
+			
+			
+		}
+
+	}
+
