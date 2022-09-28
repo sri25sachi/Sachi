@@ -1,0 +1,55 @@
+package BankAccount;
+import java.util.Scanner;
+
+
+public class MainAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner userInput = new Scanner(System.in);// for String input
+		Scanner userInput2 = new Scanner(System.in); // for non string inputs
+		
+		
+		AccountDetails Person = new AccountDetails();
+		
+		
+		System.out.println("Enter Your Name:   ");
+		
+		
+		
+		String name = userInput.nextLine();
+		Person.setAccountHolderName(name);
+		
+		
+		
+		
+		System.out.println("Enter Your Account Number:   ");
+		
+		int AccNumber = userInput2.nextInt();
+		Person.setAccountNumber(AccNumber);
+		
+		
+		
+		
+		System.out.println("Enter Your IFSC Code:   ");
+		
+		String ifsc = userInput.nextLine();
+		Person.setIfscCode(ifsc);
+		
+		
+		
+
+		System.out.println(Person.getAccountHolderName());
+		System.out.println(Person.getAccountNumber());
+		System.out.println(Person.getIfscCode());
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
