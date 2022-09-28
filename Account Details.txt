@@ -1,0 +1,45 @@
+package BankAccount;
+
+public class AccountDetails {
+
+	private String accountHolderName = "aaaaa";
+	private long accountNumber ;
+	private String ifscCode = "IFSC0000";
+	
+	public String getAccountHolderName() {
+		return accountHolderName;
+	}
+	public void setAccountHolderName(String newaccountHolderName) {
+		accountHolderName = newaccountHolderName;
+		
+		
+		
+	}
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(int newaccountNumber) {
+		accountNumber = newaccountNumber;
+		
+		
+		
+		
+	}
+	public String getIfscCode() {
+		return ifscCode;
+	}
+	public void setIfscCode(String newifscCode) {
+		ifscCode = newifscCode;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
